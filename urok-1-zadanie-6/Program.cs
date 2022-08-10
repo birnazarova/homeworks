@@ -1,8 +1,6 @@
 ﻿// Показать последнюю цифру трёхзначного числа
 
 Console.WriteLine("Введите трехзначное число: ");
-string number = Console.ReadLine();
-
-char[] digits = number.ToCharArray();
+int number = int.Parse(Console.ReadLine());
  
-Console.WriteLine(digits[2]);  
+Console.WriteLine(number%100%10);  
