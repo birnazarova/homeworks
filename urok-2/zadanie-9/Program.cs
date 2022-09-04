@@ -1,13 +1,16 @@
-﻿// Показать кубы чисел, заканчивающихся на четную цифру
+﻿// Написать программу вычисления произведения чисел от 1 до N
 
 Console.Write("Задайте число N: ");
 int N = int.Parse(Console.ReadLine() ?? "0");
 
-int[] array = new int[N];
-int pow = 3;
+int i = 1;
+int multiplication = 1;
 
-for (int i=0; i < N; i++) //1 2 3
+while (i<=N)
 {
-    double cube = Math.Pow(i, pow);
-    if (cube%2==0) Console.WriteLine($"Куб числа {i} = {cube}");
+    multiplication=multiplication*i;
+    i++;
 }
+
+Console.WriteLine(multiplication);
+
